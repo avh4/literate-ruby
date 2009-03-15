@@ -7,3 +7,11 @@ Feature: Executing literate programs
     Given a program with only code (example1)
     When I execute the program
     Then I should see the expected output (example1)
+
+  Scenario: Program with two code sections
+    Given a program with two code sections (example2)
+    When I execute the program
+    Then I should see the expected output (example2)
+  
+  
+  
