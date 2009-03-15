@@ -7,7 +7,7 @@ end
 
 @code = {}
 
-def Section(title)
+def Section(title, doc = nil)
   @code[title] = lambda { yield }
 end
 
