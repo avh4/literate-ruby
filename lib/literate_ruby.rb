@@ -6,7 +6,9 @@ module LiterateRuby
 end
 
 def Section(title)
+  @code = lambda { yield }
 end
 
 def execute(section)
+  @code.call
 end
