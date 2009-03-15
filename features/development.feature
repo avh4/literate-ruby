@@ -12,6 +12,10 @@ Feature: Executing literate programs
     Given a program with two code sections (example2)
     When I execute the program
     Then I should see the expected output (example2)
-  
+    
+  Scenario: A program with documentation
+    Given a program with documentation (example3)
+    When I execute the program
+    When I should see the expected output (example3)
   
   
