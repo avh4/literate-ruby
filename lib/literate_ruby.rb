@@ -4,3 +4,9 @@ $:.unshift(File.dirname(__FILE__)) unless
 module LiterateRuby
   VERSION = '0.0.1'
 end
+
+def Section(title)
+end
+
+def execute(section)
+end
