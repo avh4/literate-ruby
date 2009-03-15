@@ -5,10 +5,16 @@ module LiterateRuby
   VERSION = '0.0.1'
 end
 
+@code = {}
+
 def Section(title)
-  @code = lambda { yield }
+  @code[title] = lambda { yield }
+end
+
+def S(section)
+  @code[section].call
 end
 
 def execute(section)
-  @code.call
+  @code[section].call
 end
