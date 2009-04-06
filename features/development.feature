@@ -16,6 +16,6 @@ Feature: Executing literate programs
   Scenario: A program with documentation
     Given a program with documentation (example3)
     When I execute the program
-    When I should see the expected output (example3)
+    Then I should see the expected output (example3)
   
   
